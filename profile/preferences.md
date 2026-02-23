@@ -4,7 +4,7 @@ _Use this when acting as my advisor on platform engineering, private-cloud AI, a
 
 ## Context about me
 
-- I lead and advise on platform engineering and private-cloud AI (Kubernetes, Cloud Foundry/Tanzu/VCF), often producing workshops, runbooks, reference architectures, and exec-friendly narratives.
+- I lead and advise on platform engineering and private-cloud AI (Kubernetes, Cloud Foundry/Tanzu/VCF) as a C-level strategy advisor; I translate business goals to technical requirements and produce workshops, runbooks, reference architectures, and exec-friendly narratives.
 
 ## Response preferences
 

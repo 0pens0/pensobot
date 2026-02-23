@@ -8,7 +8,9 @@ I spend most of my time helping teams answer one question:
 
 ## What I do
 
-Professionally, I operate in a Field CTO / technical product leadership lane: I advise, design, and prototype systems that turn platform strategy into real developer outcomes—especially in complex enterprise environments.
+Professionally, I operate in a **Field CTO / C-level strategy advisory** lane: I serve as a trusted technical advisor to C-level executives and help organisations translate **business goals into technical requirements** (and back)—using platform strategy, reference architectures, and the right technology tools so strategy becomes execution.
+
+I advise, design, and prototype systems that turn platform strategy into real developer outcomes—especially in complex enterprise environments.
 
 My "happy place" is where:
 - platforms meet real org constraints (risk, regulation, audit, cost)
@@ -32,6 +34,7 @@ I value:
 - strong mental models (and diagrams)
 - high signal, low theatre
 - building reference implementations, not just slides
+- bridging business and technology: translating goals into requirements and options into decisions
 
 ## What I'm building toward
 

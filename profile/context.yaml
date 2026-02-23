@@ -1,12 +1,12 @@
 # Structured context for assistants/agents.
 # Keep this file factual, current, and machine-readable.
 
-last_updated: "2026-02-23"   # Update when you change facts so agents know freshness
+last_updated: "2026-02-24"   # Update when you change facts so agents know freshness
 
 identity:
   name: "Oren Penso"
   primary_language: "en-GB"
-  other_languages: ["he-IL"]
+  other_languages: ["he-IL", "es"]
   timezone: "Europe/London"
   location:
     country: "United Kingdom"
@@ -15,16 +15,28 @@ identity:
 professional:
   current_title: "Global Field CTO, Tanzu"
   organisation: "Broadcom (Tanzu, formerly VMware Tanzu)"
+  role_type: "C-Suite / C-Level"
   role_summary:
+    - "C-level executive strategy advisor: trusted technical advisor to C-level executives"
+    - "Translating business goals to technical requirements (and back) with technology tools"
     - "Platform engineering & application platform strategy"
     - "Cloud-native delivery (Kubernetes + PaaS patterns)"
     - "Secure AI adoption (RAG, agents, governance, platform integration)"
+    - "GTM strategist; startup advisor (e.g. cybersecurity, early-stage)"
+  experience_years: 24
+  notable:
+    - "Author: Service Mesh for Dummies"
+    - "Founder, VMware Kubernetes community; led VMware cloud-native certification programme"
+    - "Member & investor, Cyber Club London (CCL); cybersecurity leaders, early-stage start-ups"
+    - "Penso.io founder (technical thought leadership, content)"
   typical_deliverables:
-    - "Reference architectures"
+    - "C-level and exec strategy sessions; technical advisory"
+    - "Reference architectures (business goals → technical requirements)"
     - "Workshops / CTO sessions"
     - "PoC/PoV technical leadership"
     - "Runbooks, automation, templates"
     - "Keynotes and technical storytelling"
+    - "GTM and product strategy; portfolio messaging and value propositions"
 
 links:
   website: "https://penso.io"

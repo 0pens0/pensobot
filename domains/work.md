@@ -4,18 +4,21 @@ This file captures the working context I most often need AI help with.
 
 ## Role snapshot
 
-I operate as a senior technical leader who supports:
+I operate as a senior technical leader and **C-level strategy advisor** who supports:
+- **Executive strategy advisory**: trusted technical advisor to C-level executives; guiding strategic IT decisions and translating business goals into technical requirements (and back) with the help of technology tools
 - platform engineering strategy and adoption
 - enterprise architecture decisions
 - hands-on prototypes and reference implementations
 - AI platform enablement with guardrails
+- GTM and product strategy; simplifying complex portfolio concepts into clear value propositions
 
 ## Typical requests I give AI
 
 ### Architecture & strategy
+- Translate business goals into technical requirements and options (and vice versa); bridge exec and engineering language
 - Compare platform approaches (Kubernetes vs PaaS, build pipelines, runtime patterns)
-- Create decision frameworks and tradeoff tables
-- Produce reference architectures (including security boundaries)
+- Create decision frameworks and tradeoff tables for C-level and technical audiences
+- Produce reference architectures (including security boundaries) that align with business outcomes
 
 ### Enablement & delivery
 - Workshop agendas, scripts, narratives for exec + developer audiences
