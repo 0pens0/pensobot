@@ -1,0 +1,6 @@
+# Optional: ignore local overrides or secrets you never want to commit
+# .env
+# secrets/
+
+# OS
+.DS_Store

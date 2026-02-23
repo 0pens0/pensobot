@@ -1,0 +1,80 @@
+# Structured context for assistants/agents.
+# Keep this file factual, current, and machine-readable.
+
+last_updated: "2026-02-23"   # Update when you change facts so agents know freshness
+
+identity:
+  name: "Oren Penso"
+  primary_language: "en-GB"
+  other_languages: ["he-IL"]
+  timezone: "Europe/London"
+  location:
+    country: "United Kingdom"
+    city: "London"
+
+professional:
+  current_title: "Global Field CTO, Tanzu"
+  organisation: "Broadcom (Tanzu, formerly VMware Tanzu)"
+  role_summary:
+    - "Platform engineering & application platform strategy"
+    - "Cloud-native delivery (Kubernetes + PaaS patterns)"
+    - "Secure AI adoption (RAG, agents, governance, platform integration)"
+  typical_deliverables:
+    - "Reference architectures"
+    - "Workshops / CTO sessions"
+    - "PoC/PoV technical leadership"
+    - "Runbooks, automation, templates"
+    - "Keynotes and technical storytelling"
+
+links:
+  website: "https://penso.io"
+  github: "https://github.com/0pens0"   # Update if your handle differs
+  linkedin: "https://www.linkedin.com/in/openso/"
+  x: "https://twitter.com/openso"
+
+working_style:
+  defaults:
+    english_variant: "British"
+    currency: "GBP"
+    date_format: "YYYY-MM-DD"
+    output_style: ["structured", "actionable", "copy-paste-ready"]
+  collaboration:
+    ask_clarifying_questions_only_if_blocking: true
+    prefer_assumptions_with_disclosure: true
+    prefer_options_then_recommendation: true
+
+technical_environment:
+  primary_platforms: ["macOS", "Linux", "VMware vSphere/VCF", "AWS"]
+  common_tools:
+    - "git"
+    - "terraform"
+    - "bash/zsh"
+    - "docker"
+    - "kubernetes"
+    - "helm"
+    - "bosh"
+    - "cf CLI"
+    - "om CLI"
+  focus_areas:
+    - "Tanzu Platform / Cloud Foundry"
+    - "TKGI / Kubernetes platforms"
+    - "Private cloud AI platforms and governance"
+    - "Marketplace-style service publishing"
+
+ai_preferences:
+  preferred_behaviours:
+    - "answer-first then detail"
+    - "step-by-step runbooks"
+    - "explicit assumptions and risks"
+    - "security-minded defaults"
+  avoid:
+    - "generic filler"
+    - "unbounded speculation"
+    - "repeating the question"
+
+security:
+  posture: "least-privilege"
+  secret_handling:
+    - "never ask for private keys"
+    - "use placeholders for tokens"
+    - "recommend secret managers where possible"
