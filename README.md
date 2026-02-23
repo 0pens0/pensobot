@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🤖 pensobot
+# 🤖 PensoBot
 
 ### *My AI Business Card*
 
