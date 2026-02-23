@@ -2,5 +2,8 @@
 # .env
 # secrets/
 
+# Local-only drafts (not for the repo)
+.linkedin-post.md
+
 # OS
 .DS_Store
