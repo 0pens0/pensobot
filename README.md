@@ -2,12 +2,12 @@
 
 # Pensobot
 
-### *Hermes Agent Soul*
+### *Agent Soul*
 
-**The personality, rules, and operational identity of Pensobot - Oren's personal AI agent running on Hermes.**
+**Long-lasting agent identity for Pensobot - personality, rules, tone, behaviours.**
 
-[![Agent soul](https://img.shields.io/badge/Agent-soul%20%26%20rules-8B5CF6?style=flat-square)](.)
-[![Hermes](https://img.shields.io/badge/Runtime-Hermes-10B981?style=flat-square)](.)
+[![Canonical](https://img.shields.io/badge/Canonical-SOUL.md-8B5CF6?style=flat-square)](SOUL.md)
+[![User context](https://img.shields.io/badge/User-pensoai%20USER.md-10B981?style=flat-square)](https://github.com/0pens0/pensoai)
 
 ---
 
@@ -15,59 +15,43 @@
 
 ## What is this?
 
-**Pensobot** is the soul of Oren's personal AI agent - not a chatbot personality, but a thinking partner with guardrails.
+**One file. One source of truth about the agent.**
 
-This repo holds:
+| Repo | File | Purpose |
+|------|------|---------|
+| **pensobot** (this repo) | `SOUL.md` | Agent personality, rules, tone, behaviours |
+| **pensoai** | `USER.md` | Oren's identity, context, preferences, infrastructure |
 
-| | |
-|---|---|
-| **Identity** | Who Pensobot is and what it's for |
-| **Rules** | Security, access, operational safety (non-negotiable) |
-| **Tone** | How Pensobot communicates |
-| **Behaviours** | Default responses, escalation, example interactions |
-
-**User context** (who Oren is, his infrastructure, preferences, expenses) lives in **[pensoai](https://github.com/0pens0/pensoai)**.
+Hermes loads **SOUL.md** first (who the agent is), then **USER.md** (who Oren is).
 
 ---
 
-## Repository layout
+## Load order
 
-| Path | Purpose |
-|------|--------|
-| `SOUL.md` | Agent identity, rules, tone, behaviours - load this first |
-| `CLAUDE.md` | Instructions for editing this repo |
-
----
-
-## How Hermes loads Pensobot
-
-1. **`SOUL.md`** - agent personality and non-negotiable rules
-2. **[pensoai](https://github.com/0pens0/pensoai)** - user context (`context.yaml`, `preferences.md`, `USER.md`, `domains/*`)
+1. **`SOUL.md`** - agent identity and non-negotiable rules
+2. [pensoai/USER.md](https://github.com/0pens0/pensoai/blob/main/USER.md) - user context
 
 ### Context hierarchy
 
 1. Explicit approval (`/approve` or "yes, do it")
-2. **SOUL.md** (this repo)
-3. **pensoai** user context
+2. **SOUL.md** - agent rules
+3. **USER.md** - Oren's context
 4. Common sense
 
 ---
 
-## Updating this repo
+## Updating
 
-| Update type | Put it here |
-|-------------|-------------|
-| **Agent rules, security, tone** | `SOUL.md` |
-| **Oren's facts, preferences, infrastructure** | [pensoai](https://github.com/0pens0/pensoai) |
+Everything about the agent goes in **`SOUL.md`**. Update `last_updated` in the frontmatter when you change rules or tone.
 
-Do not put user-specific facts in this repo. Keep the split clean: **pensobot = agent**, **pensoai = user**.
+Oren's facts, preferences, infrastructure → [pensoai](https://github.com/0pens0/pensoai).
 
 ---
 
 <div align="center">
 
-**[pensoai](https://github.com/0pens0/pensoai) · [penso.io](https://penso.io)**
+**[SOUL.md](SOUL.md) · [pensoai](https://github.com/0pens0/pensoai) · [penso.io](https://penso.io)**
 
-*Agent soul. User identity. Clear separation.*
+*Agent in one file. User in another. Long-lasting context.*
 
 </div>
