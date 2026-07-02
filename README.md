@@ -1,85 +1,73 @@
 <div align="center">
 
-# 🤖 PensoBot
+# Pensobot
 
-### *My AI Business Card*
+### *Hermes Agent Soul*
 
-**A compact, agent-friendly representation of who I am, how I work, and the context I want AI systems to use when collaborating with me.**
+**The personality, rules, and operational identity of Pensobot - Oren's personal AI agent running on Hermes.**
 
-[![AI-ready](https://img.shields.io/badge/AI--ready-ground%20truth-8B5CF6?style=flat-square)](.)
-[![Human-readable](https://img.shields.io/badge/Human--readable-Markdown-10B981?style=flat-square)](.)
-[![Machine-parseable](https://img.shields.io/badge/Machine--parseable-YAML%20%7C%20MD-3B82F6?style=flat-square)](.)
+[![Agent soul](https://img.shields.io/badge/Agent-soul%20%26%20rules-8B5CF6?style=flat-square)](.)
+[![Hermes](https://img.shields.io/badge/Runtime-Hermes-10B981?style=flat-square)](.)
 
 ---
 
 </div>
 
-## ✨ What is this?
+## What is this?
 
-Think of it as **a persistent “me” that any assistant, copilot, or autonomous agent can load** — so I don’t have to repeat myself and the AI has a single source of truth for:
+**Pensobot** is the soul of Oren's personal AI agent - not a chatbot personality, but a thinking partner with guardrails.
 
-| 🎯 | **Identity** — who I am, what I believe, how I show up |
-|----|--------------------------------------------------------|
-| 📋 | **Preferences** — how I like answers (punchline first, structured, British English, security by default) |
-| 🔗 | **Context** — timezone, role, links, tools, working style (machine-readable) |
-| 🏢 | **Domains** — work context, typical requests, success criteria, patterns I like |
+This repo holds:
 
-So when I say *“use my repo”*, the agent gets **facts + tone + guardrails** in one go.
+| | |
+|---|---|
+| **Identity** | Who Pensobot is and what it's for |
+| **Rules** | Security, access, operational safety (non-negotiable) |
+| **Tone** | How Pensobot communicates |
+| **Behaviours** | Default responses, escalation, example interactions |
+
+**User context** (who Oren is, his infrastructure, preferences, expenses) lives in **[pensoai](https://github.com/0pens0/pensoai)**.
 
 ---
 
-## 📁 Repository layout
+## Repository layout
 
 | Path | Purpose |
 |------|--------|
-| `profile/about.md` | Narrative: who I am and what I care about |
-| `profile/preferences.md` | How I like to work with AI (style, depth, formats, guardrails) |
-| `profile/context.yaml` | Structured facts for tools/agents (timezone, roles, links, defaults) |
-| `domains/work.md` | Work context: typical tasks, deliverables, success criteria |
-| `domains/_template.md` | Template for new domains (hobbies, learning, etc.) |
+| `SOUL.md` | Agent identity, rules, tone, behaviours - load this first |
+| `CLAUDE.md` | Instructions for editing this repo |
 
 ---
 
-## 🤖 How to use (for AI agents)
+## How Hermes loads Pensobot
 
-When you start a new collaboration, ingest in this order:
+1. **`SOUL.md`** - agent personality and non-negotiable rules
+2. **[pensoai](https://github.com/0pens0/pensoai)** - user context (`context.yaml`, `preferences.md`, `USER.md`, `domains/*`)
 
-1. **`profile/context.yaml`** — facts + defaults  
-2. **`profile/preferences.md`** — interaction contract  
-3. **`profile/about.md`** — tone + narrative  
-4. **Relevant domain files** in `domains/`
+### Context hierarchy
 
-### 💡 System prompt snippet
-
-> Use this repo as the source of truth for user context and preferences.  
-> Follow the constraints in `profile/preferences.md`.  
-> If conflicts exist: **context.yaml** > **preferences.md** > **domains/\*** > **about.md**.
+1. Explicit approval (`/approve` or "yes, do it")
+2. **SOUL.md** (this repo)
+3. **pensoai** user context
+4. Common sense
 
 ---
 
-## 🔄 Updating this repo
+## Updating this repo
 
 | Update type | Put it here |
-|-------------|--------------|
-| **Facts** (title, timezone, links, tools) | `profile/context.yaml` |
-| **Narrative** (who you are, what you believe) | `profile/about.md` |
-| **How you want AI to behave** | `profile/preferences.md` |
-| **New life/work area** | New file in `domains/` using `_template.md` |
+|-------------|-------------|
+| **Agent rules, security, tone** | `SOUL.md` |
+| **Oren's facts, preferences, infrastructure** | [pensoai](https://github.com/0pens0/pensoai) |
 
-*Tip: set `last_updated` in `profile/context.yaml` when you change facts, so agents can judge freshness.*
-
----
-
-## 🔒 Privacy
-
-This repo represents me in a way I’m comfortable sharing. I don’t store IDs, account numbers, addresses, private medical details, or anything that could be used for social engineering.
+Do not put user-specific facts in this repo. Keep the split clean: **pensobot = agent**, **pensoai = user**.
 
 ---
 
 <div align="center">
 
-**📌 [penso.io](https://penso.io) · [LinkedIn](https://www.linkedin.com/in/openso/) · [X](https://twitter.com/openso)**
+**[pensoai](https://github.com/0pens0/pensoai) · [penso.io](https://penso.io)**
 
-*One repo. One source of truth. Better AI collaboration.*
+*Agent soul. User identity. Clear separation.*
 
 </div>
